@@ -23,19 +23,19 @@ Create a new project:
 
 ![netcore01](/docs/netcore01.JPG)
 
-Choose .Net Core Web Application:
+Choose ASP.Net Core Web Application:
 
 ![netcore02](/docs/netcore02.JPG)
 
-Name the project and configure the source folder:
+Name the project and configure the local path:
 
 ![netcore03](/docs/netcore03.JPG)
 
-Select an empty .Net Core project, uncheck the HTTPS and Docker support options.
+Select an empty .Net Core project and uncheck the HTTPS and Docker support options:
 
 ![netcore04](/docs/netcore04.JPG)
 
-Create a folder named "Controllers" and add into it a class named "TestController" with an async method:
+After the solution be compiled, create a folder named "Controllers" and add into it a class named "TestController" with an async method:
 
 ![netcore07](/docs/netcore07.JPG)
 
@@ -49,12 +49,11 @@ Run the project in debug mode and access the URL below:
 http://localhost:<API-PORT>/api/Test
 ```
 
-If the "OK!" message be displayed, our web API is running!
-It's time to interact with it by using Swagger.
+If the "OK!" message be displayed in the browser, our web API is running!  
 
 ### Swagger
 
-Open the Package Manager Console and run the following commands to install the Swashbuckle version compatible with .Net Core 3:
+Inside the Visual Studio 2019, open the Package Manager Console and run the following commands to install the Swashbuckle version compatible with .Net Core 3:
 
 ```bash
 Install-Package Swashbuckle.AspNetCore -Version 5.0.0-rc3
@@ -66,7 +65,7 @@ Open the "Startup" class again and modify the "ConfigureServices" method:
 
 ![swagger01](/docs/swagger01.JPG)
 
-The "Configure" method as well:
+And the "Configure" method as well:
 
 ![swagger02](/docs/swagger02.JPG)
 
@@ -74,11 +73,11 @@ Open the project's properties window, go to "Debug" and type "swagger" inside th
 
 ![swagger04](/docs/swagger04.JPG)
 
-Return to the "TestController" and put a simple annotation above the "Get" method:
+Inside the "TestController", put a simple annotation above the "Get" method:
 
 ![swagger03](/docs/swagger03.JPG)
 
-Now, let's run the project again and the Swagger page will open in the URL:
+Now, let's run the project again. The Swagger page will open in this URL:
 
 ```bash
 http://localhost:<API-PORT>/swagger/index.html
@@ -91,8 +90,3 @@ This will be the result:
 Try the "Get" method and the "OK!" message will return from the API.
 
 ![swagger09](/docs/swagger09.JPG)
-
-Now that the XML documentation file is created, it is important to prepare it for an eventual publishing.
-Inside the Visual Studio 2019, open the property window of the XML file and select the "Copy if newer" option.
-
-![swagger07](/docs/swagger07.JPG)
