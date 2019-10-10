@@ -2,7 +2,7 @@
 
 # NetCore3-Swagger
 
-Creating a .Net Core 3 web API with Swagger
+Creating a .Net Core 3 web API with Swagger. This example in complete inside the [api folder](https://github.com/lucianopereira86/NetCore3-Swagger/tree/dev/api).
 
 ## Technologies
 
