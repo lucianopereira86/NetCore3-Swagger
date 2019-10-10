@@ -12,7 +12,7 @@ Creating a .Net Core 3 web API with Swagger
 
 ## Topics
 
-- [.Net Core 3](#netcore3)
+- [.Net Core 3](#net-core-3)
 - [Swagger](#swagger)
 
 ### .Net Core 3
