@@ -69,7 +69,7 @@ And the "Configure" method as well:
 
 ![swagger02](/docs/swagger02.JPG)
 
-Open the project's properties window, go to "Build", check the "XML documentation file" and type the name of your project with xml extension:
+Open the project's properties window, go to "Build", check the "XML documentation file" option and type your project name with the _XML_ extension:
 
 ![swagger03_04](/docs/swagger03_04.JPG)
 
@@ -83,8 +83,8 @@ Go to "Debug" and type "swagger" inside the input field above the environment va
 
 ```xml
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+	    <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
   </PropertyGroup>
 ```
 
