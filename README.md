@@ -49,7 +49,7 @@ Run the project in debug mode and access the URL below:
 http://localhost:<API-PORT>/api/Test
 ```
 
-If the "OK!" message be displayed in the browser, our web API is running!  
+If the "OK!" message be displayed in the browser, our web API is running!
 
 ### Swagger
 
@@ -69,9 +69,24 @@ And the "Configure" method as well:
 
 ![swagger02](/docs/swagger02.JPG)
 
-Open the project's properties window, go to "Debug" and type "swagger" inside the input field above the environment variables list:
+Open the project's properties window, go to "Build", check the "XML documentation file" option and type your project name with the _XML_ extension:
+
+![swagger03_04](/docs/swagger03_04.JPG)
+
+Go to "Debug" and type "swagger" inside the input field above the environment variables list:
 
 ![swagger04](/docs/swagger04.JPG)
+
+| WARNING: To avoid the MSB3073 error during the compilation, edit the project's _.csproj_ file by adding the tag _OpenApiGenerateDocuments_ inside _PropertyGroup_: |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+
+```xml
+  <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+  </PropertyGroup>
+```
 
 Inside the "TestController", put a simple annotation above the "Get" method:
 
