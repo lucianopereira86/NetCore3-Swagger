@@ -84,7 +84,7 @@ Go to "Debug" and type "swagger" inside the input field above the environment va
 ```xml
   <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
-	    <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+	<OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
   </PropertyGroup>
 ```
 
